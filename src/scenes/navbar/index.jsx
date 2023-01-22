@@ -46,18 +46,17 @@ const Navbar = () => {
         <Typography
           fontWeight='bold'
           fontSize='clamp(1rem, 2rem, 2.25rem)'
-          color='primary'
+          color='pink'
           onClick={() => navigate("/home")}
           sx={{
             "&:hover": {
-              color: primaryLight,
+              color: "blue",
               cursor: "pointer",
             },
           }}
         >
           Lindy Gallery App
         </Typography>
-
       </FlexBetween>
 
       {/* DESKTOP NAV */}

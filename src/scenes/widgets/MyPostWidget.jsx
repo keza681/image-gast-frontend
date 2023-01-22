@@ -4,8 +4,6 @@ import {
   AttachFileOutlined,
   GifBoxOutlined,
   ImageOutlined,
-  MicOutlined,
-  MoreHorizOutlined,
 } from "@mui/icons-material";
 import {
   Box,
@@ -24,6 +22,7 @@ import WidgetWrapper from "../../components/WidgetWrapper";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPosts } from "../../state";
+import "./style.css";
 
 const MyPostWidget = ({ picturePath }) => {
   const dispatch = useDispatch();
@@ -124,22 +123,15 @@ const MyPostWidget = ({ picturePath }) => {
         <FlexBetween gap='0.25rem' onClick={() => setIsImage(!isImage)}>
           <ImageOutlined sx={{ color: mediumMain }} />
           <Typography
-            color={mediumMain}
+            backGroundColor='blue'
+            color='pink'
             sx={{ "&:hover": { cursor: "pointer", color: medium } }}
           >
             Click here to upload a photo
           </Typography>
         </FlexBetween>
 
-        <Button
-          disabled={!post}
-          onClick={handlePost}
-          sx={{
-            color: palette.background.alt,
-            backgroundColor: palette.primary.main,
-            borderRadius: "3rem",
-          }}
-        >
+        <Button disabled={!post} onClick={handlePost} className='button_upload'>
           UPLOAD NOW
         </Button>
       </FlexBetween>

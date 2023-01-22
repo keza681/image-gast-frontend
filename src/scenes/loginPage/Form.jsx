@@ -240,9 +240,9 @@ const Form = () => {
               sx={{
                 m: "2rem 0",
                 p: "1rem",
-                backgroundColor: palette.primary.main,
+                backgroundColor: "pink",
                 color: palette.background.alt,
-                "&:hover": { color: palette.primary.main },
+                "&:hover": { color: "gray" },
               }}
             >
               {isLogin ? "LOGIN" : "REGISTER"}
@@ -254,10 +254,10 @@ const Form = () => {
               }}
               sx={{
                 textDecoration: "underline",
-                color: palette.primary.main,
+                color: "gray",
                 "&:hover": {
                   cursor: "pointer",
-                  color: palette.primary.light,
+                  color: "pink",
                 },
               }}
             >
