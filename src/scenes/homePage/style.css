@@ -1,0 +1,13 @@
+.grid_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.post_widget {
+  width: 50%;
+  margin: auto;
+  padding-top: 2rem;
+}
