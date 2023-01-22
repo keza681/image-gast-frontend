@@ -20,7 +20,7 @@ const HomePage = () => {
         className='grid_container'
         display={isNonMobileScreens ? "flex" : "block"}
       >
-        <PostsWidget userId={_id} />
+        <PostsWidget userId={_id} className="single_post"/>
       </div>
     </Box>
   );

@@ -1,12 +1,17 @@
 .grid_container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-left: 2rem;
   padding-right: 2rem;
+  justify-content: space-around;
 }
 .post_widget {
   width: 50%;
   margin: auto;
   padding-top: 2rem;
 }
+
+/* .single_post {
+  background-color: pink !important;
+  width: 40px;
+} */
